@@ -3,4 +3,140 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background-color: #708090;
+}
+
+section{
+    border-bottom: #50C878 solid 5px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin: 1rem;
+    color: #FFA500;
+}
+
+ul li{
+    list-style: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 0.7rem;
+}
+
+#cabeca div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40vw;
+}
+
+#cabeca img{
+    width: 12vw;
+    margin-left: 20rem;
+    border-radius: 50%;
+    border: #FFA500 solid 3px;
+}
+
+#cabeca{
+    flex-direction: row;
+    align-items: center;
+}
+
+#cabeca p{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+h2{
+    font-size: 1.8rem;
+    color: #FFA500;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    color: #36f033;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+p{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 0.7rem;
+}
+
+b{
+    color: #36f033;
+    font-weight: bolder;
+}
+
+#info{
+    align-items: center;
+}
+
+#info ul{
+    width: 35rem;
+}
+
+#formacao{
+    flex-direction: column;
+}
+
+#experiencia p{
+    margin-left: 22rem;
+    margin-right: 22rem;
+    padding: 0.5rem;
+}
+
+#experiencia b{
+    color: #FFA500;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+}
+
+#habilidades{
+    align-items: center;
+}
+
+table{
+    width: 70vw;
+    margin-bottom: 1rem;
+}
+
+table th{
+    color: #36f033;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding: 0.5rem;
+}
+
+table td{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+table i{
+    padding: 0.2rem;
+    color: #36f033;
+    border: #50C878 solid 2px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+#conquistas p{
+    padding-left: 25rem;
+    padding-right: 25rem;
 }
