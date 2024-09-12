@@ -3,11 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: #708090;
+    background-color: #bcbcbd;
 }
 
 section{
-    border-bottom: #50C878 solid 5px;
+    border-bottom: #2d649b solid 5px;
     margin: 1rem;
     padding: 1rem;
     text-align: center;
@@ -21,7 +21,7 @@ h1{
     font-size: 2.3rem;
     font-weight: bolder;
     margin: 1rem;
-    color: #FFA500;
+    color: #1d3769;
 }
 
 ul li{
@@ -43,7 +43,7 @@ ul li{
     width: 12vw;
     margin-left: 20rem;
     border-radius: 50%;
-    border: #FFA500 solid 3px;
+    border: #1d3769 solid 3px;
 }
 
 #cabeca{
@@ -58,14 +58,14 @@ ul li{
 
 h2{
     font-size: 1.8rem;
-    color: #FFA500;
+    color: #c92e2e;
     font-weight: bolder;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
 h3{
-    color: #36f033;
+    color: #9f570a;
     font-weight: bolder;
     font-size: 1.3rem;
 }
@@ -77,7 +77,7 @@ p{
 }
 
 b{
-    color: #36f033;
+    color: #773030;
     font-weight: bolder;
 }
 
@@ -100,7 +100,7 @@ b{
 }
 
 #experiencia b{
-    color: #FFA500;
+    color: #773030;
     font-size: 1.2rem;
     padding: 0.2rem;
 }
@@ -115,7 +115,7 @@ table{
 }
 
 table th{
-    color: #36f033;
+    color: #c62a2a;
     font-size: 1.3rem;
     font-weight: bolder;
     padding: 0.5rem;
@@ -129,8 +129,8 @@ table td{
 
 table i{
     padding: 0.2rem;
-    color: #36f033;
-    border: #50C878 solid 2px;
+    color: #c62a2a;
+    border: #c62a2a solid 2px;
     border-radius: 50%;
     font-size: 0.8rem;
     margin-right: 0.5rem;
