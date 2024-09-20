@@ -368,76 +368,6 @@ h6{
     font-size: 1.22rem;
 }
 
-/* Responsividade para tablets */
-@media (max-width: 768px) {
-    header img#logo {
-        width: 10vw;
-        height: auto;
-    }
-
-    ul li a {
-        font-size: 1.1rem;
-        padding-right: 1rem;
-    }
-
-    h1 {
-        font-size: 4rem;
-        padding-top: 3rem;
-    }
-
-    h2 {
-        font-size: 1.3rem;
-    }
-
-    section {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .carrossel {
-        width: 80vw;
-        height: 60vh;
-    }
-
-    #filmes img {
-        width: 8rem;
-    }
-
-    #galeria div {
-        width: 80vw;
-        margin: 1rem;
-    }
-
-    #galeria img {
-        width: 15vw;
-        height: 15vw;
-    }
-
-    footer {
-        height: 8vh;
-    }
-
-    #nome h1 {
-        font-size: 3rem;
-    }
-
-    #sinopse {
-        width: 80vw;
-    }
-
-    #detalhes div {
-        width: 40vw;
-    }
-
-    #personagens div {
-        width: 30vw;
-    }
-
-    #curiosidades, #premios {
-        width: 80vw;
-    }
-}
-
 /* Responsividade para celulares */
 @media (max-width: 480px) {
     *{
@@ -445,25 +375,36 @@ h6{
         margin: 0;
         max-width: 100%;
         text-align: center;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     header img#logo {
-        width: 10vw;
+        width: 11vw;
         height: auto;
+        margin: 0;
+        padding: 0;
     }
 
-    header{
+    header {
+        flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        max-width: 100vw;
+        height: 18vh;
     }
-
-    ul li a {
-        font-size: 0.8rem;
-        padding-right: 0.3rem;
+    
+    ul {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
     }
-
-    ul{
-        margin-right: 1rem;
+    
+    ul li {
+        margin: 0 0rem;
+        padding-top: 10px;
     }
 
     h1 {
@@ -484,11 +425,15 @@ h6{
         padding-right: 0;
         margin: 0.2rem;
         margin-right: 0;
-        width: 100%;
+        width: 90vw;
+    }
+
+    #home{
+        margin-top: 10rem;
     }
 
     #info{
-        width: 100%;
+        width: 90vw;
     }
 
     .carrossel {
@@ -580,29 +525,81 @@ h6{
 
     #atualizacoes,
     #infoM{
-        width: 100%;
+        width: 90vw;
     }
 
     footer {
-        height: 7vh;
-        width: 100%;
+        height: 15vh;
+        min-width: 100vw;
+    }
+
+    footer ul{
+        width: 90vw;
+    }
+
+    section{
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #nome{
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        margin-top: 8.5rem;
     }
 
     #nome h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    #nome img{
+        padding: 0;
+        margin: 0;
+        width: 60vw;
     }
 
     #sinopse {
         width: 90vw;
     }
 
-    #detalhes div {
+    #critica{
         width: 90vw;
-        margin: 1rem 0;
     }
 
-    #personagens div {
-        width: 40vw;
+    h6{
+        margin-left: 20%;
+        margin-top: 10px;
+    }
+
+    #detalhes section{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    iframe{
+        margin-bottom: 20px;
+        width: 90vw;
+        height: 30vh;
+    }
+
+    #detalhes div {
+        width: 90vw;
+    }
+
+    #personagens section {
+        flex-direction: column;
+    }
+
+    #personagens div{
+        width: 90vw;
+        margin-bottom: 15px;
+    }
+
+    #personagens img{
+        width: 50vw;
+        height: 50vw;
     }
 
     #curiosidades, #premios {
