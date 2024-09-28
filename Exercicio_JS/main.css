@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #001f33, #003366, #004080);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100vw;
+    height: 35vh;
+    margin: 3rem;
+}
+
+h1,
+h3,
+p, 
+label {
+    color: azure;
+    font-weight: bolder;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+p,
+label{
+    font-size: 1rem;
+}
+
+button{
+    width: 6vw;
+    height: 5vh;
+    border: azure solid 2px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    color: azure;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+input{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 1rem;
+}

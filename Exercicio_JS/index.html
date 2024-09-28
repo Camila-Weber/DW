@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercício JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <section>
+        <h1>Exercício Prático JS</h1>
+        <h3>Crie uma interação com JavaScript na página que você ja criou/alterou com HTML e CSS. Exemplos de Interação
+        </h3>
+
+        <p id="texto">1. Crie um botão que, ao ser clicado, altere o texto de um parágrafo</p>
+        <button  onclick="mudarTexto()">Enter</button>
+
+    </section>
+    <section>
+        <p>2. Faça um contador que incremente um número a cada clique em um botão.</p>
+        <button onclick="contar()">Enter</button>
+        <p id="incremento"></p>
+    </section>
+    <section>
+        <p>3. Crie um formulário simples para coletar nome e e-mail e exiba as informações em um parágrafo.</p>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome"><br>
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        <button  onclick="escrever()">Enter</button><br><br>
+        <p id="escrever"></p>
+    </section>
+    <script src='main.js'></script>
+</body>
+
+</html>
