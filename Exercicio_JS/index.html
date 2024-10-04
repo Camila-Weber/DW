@@ -7,6 +7,7 @@
     <title>Exercício JS</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
@@ -14,24 +15,28 @@
         <h1>Exercício Prático JS</h1>
         <h3>Crie uma interação com JavaScript na página que você ja criou/alterou com HTML e CSS. Exemplos de Interação
         </h3>
-
         <p id="texto">1. Crie um botão que, ao ser clicado, altere o texto de um parágrafo</p>
-        <button  onclick="mudarTexto()">Enter</button>
-
+        <button onclick="mudarTexto()">Enter</button>
     </section>
     <section>
         <p>2. Faça um contador que incremente um número a cada clique em um botão.</p>
-        <button onclick="contar()">Enter</button>
-        <p id="incremento"></p>
+        <i onclick="contar()" class="ph ph-thumbs-up"></i>
+        <p id="like">0 gostei</p>
+        <i onclick="contar2()" class="ph ph-thumbs-down"></i>
+        <p id="deslike">0 não gostei</p>
     </section>
-    <section>
+    <section id="escrever">
         <p>3. Crie um formulário simples para coletar nome e e-mail e exiba as informações em um parágrafo.</p>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome"><br>
-        <label for="email">Email</label>
-        <input type="text" id="email">
-        <button  onclick="escrever()">Enter</button><br><br>
-        <p id="escrever"></p>
+        <form>
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome"><br><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email"><br><br>
+            <label for="comentario">Comentário</label><br>
+            <textarea name="comentario" id="comentario" rows="10" cols="30">Diga o que você achou.</textarea><br><br>
+            <button type="button" onclick="escrever()">Enter</button><br><br>
+        </form><br><br><br><br>
+        <p id="resultado"></p>
     </section>
     <script src='main.js'></script>
 </body>
