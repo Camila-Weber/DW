@@ -1,0 +1,15 @@
+.carousel-item img{
+    height: 80vh;
+    object-fit: cover;
+}
+
+#salgadas img{
+    width: 15vw;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .carousel-item img{
+        height: 50vh;
+    }
+}
