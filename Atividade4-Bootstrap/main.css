@@ -3,7 +3,8 @@
     object-fit: cover;
 }
 
-#salgadas img{
+#salgadas img,
+#doces img{
     width: 15vw;
     height: auto;
 }
