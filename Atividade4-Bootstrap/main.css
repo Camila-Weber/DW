@@ -1,4 +1,4 @@
-.carousel-item img{
+.carousel-item img {
     height: 80vh;
     object-fit: cover;
 }
@@ -6,13 +6,54 @@
 #salgadas img,
 #doces img,
 #porções img,
-#bebidas img{
+#bebidas img {
     width: 15vw;
     height: auto;
+    border: #003366 3px solid;
+}
+
+p a.btn-detail{
+    background-color: #003366; 
+    color: oldlace;
+}
+
+section h1,
+section h2{
+    color: #003366;
+}
+
+#home h1{
+    color: #f8f9fa;
+}
+
+.navbar-toggler {
+    border-color: #f8f9fa;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23f8f9fa' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 @media (max-width: 576px) {
-    .carousel-item img{
+    .carousel-item img {
         height: 50vh;
+    }
+
+    #salgadas img,
+    #doces img,
+    #porções img,
+    #bebidas img {
+        width: 40vw;
+        height: auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    #salgadas img,
+    #doces img,
+    #porções img,
+    #bebidas img {
+        width: 40vw;
+        height: auto;
     }
 }
