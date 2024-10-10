@@ -14,7 +14,12 @@
 
 p a.btn-detail{
     background-color: #003366; 
-    color: oldlace;
+    color: #f8f9fa;
+}
+
+p a.btn-detail:hover{
+    background-color: #f8f9fa; 
+    color: #003366;
 }
 
 section h1,
