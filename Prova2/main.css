@@ -1,0 +1,26 @@
+/* 0a0908
+22333b 
+eae0d5
+c6ac8f
+5e503f*/
+
+/* --rich-black: #0d1321ff;
+--prussian-blue: #1d2d44ff;
+--paynes-gray: #3e5c76ff;
+--silver-lake-blue: #748cabff;
+--eggshell: #f0ebd8ff; */
+
+section{
+    height: 100vh;
+}
+
+.navbar-nav {
+    width: 100%; 
+    align-items: center;
+    justify-content: space-evenly; 
+    margin-left: 60rem;
+}
+
+.navbar {
+    text-align: center; 
+}
