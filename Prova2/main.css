@@ -5,20 +5,21 @@
 --eggshell: #f0ebd8ff; */
 
 html, body {
-    overflow: hidden; /* Esconde as barras de rolagem */
+    overflow: hidden;
     margin: 0;
-    height: 100vh; /* Garantir que ocupa a altura total da janela */
 }
 
 section{
-    background-color: #1d2d44ff;
+    background-color: #0d1321ff;
     padding-top: 3rem;
     margin: 0;
+    min-height: 100vh;
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    color: white;
+    color: #f0ebd8ff;
     overflow: hidden;
 }
 
@@ -31,6 +32,25 @@ section{
 
 .navbar {
     text-align: center; 
+    color: #0d1321ff;;
+    color: #3e5c76ff;
+    color: #748cabff;
+}
+
+.navbar-nav a.nav-link.active,
+a.navbar-brand{
+    color: #f0ebd8ff;
+}
+
+.navbar-nav a.nav-link.active:hover,
+li.nav-item:hover{
+    color: #0d1321ff;
+    background-color: #f0ebd8ff;
+    border-radius: 5px;
+}
+
+a.navbar-brand:hover{
+    color: #f0ebd8ff;
 }
 
 .light {
@@ -46,3 +66,72 @@ section{
     display: none; 
 }
 
+footer a{
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+
+i{
+    font-size: 1.5rem;
+    color: #f0ebd8ff;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+i:hover{
+    background-color: #f0ebd8ff;
+    color: #1d2d44ff;
+}
+
+a.btn{
+    color: #1d2d44ff;
+    background-color: #f0ebd8ff;
+}
+
+a.btn:hover{
+    background-color: #0d1321ff;
+    border: #f0ebd8ff 2px solid;
+    color: #f0ebd8ff;
+}
+
+/* SOBRE */
+
+.soft-skills{
+    align-items: center;
+}
+
+.card {
+    border: 1px solid #3e5c76ff;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f0ebd8ff;
+    transition: box-shadow 0.3s;
+    width: 50vw;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.skill-icons i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #0d1321ff;
+}
+
+.skill-icons i:hover {
+    color: #f0ebd8ff;
+    background-color: #0d1321ff;
+}
+
+.skill-description {
+    text-align: center;
+}
