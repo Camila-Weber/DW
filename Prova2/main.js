@@ -118,3 +118,95 @@ function changeSkill(skill, element) {
     });
     element.classList.add('active-icon');
 }
+
+var num1 = 10;
+var num2 = 2;
+var num3 = 9;
+var num4 = 9;
+var num5 = 1;
+var num6 = 7;
+var num7 = 9;
+var num8 = 0;
+var num9 = 10;
+var num10 = 5;
+var num11 = 2;
+var num12 = 3;
+var num13 = 1;
+var num14 = 2;
+var num15 = 1;
+
+function contar(icon){
+    num1++;
+    icon.classList.toggle('selected');
+    document.getElementById("like").innerHTML = num1;
+}
+function contar2(icon){
+    num2++;
+    icon.classList.toggle('selected');
+    document.getElementById("deslike").innerHTML = num2;
+}
+function contar3(icon){
+    num3++;
+    icon.classList.toggle('selected');
+    document.getElementById("coracao").innerHTML = num3;
+}
+function contar4(icon){
+    num4++;
+    icon.classList.toggle('selected');
+    document.getElementById("like2").innerHTML = num4;
+}
+function contar5(icon){
+    num5++;
+    icon.classList.toggle('selected');
+    document.getElementById("deslike2").innerHTML = num5;
+}
+function contar6(icon){
+    num6++;
+    icon.classList.toggle('selected');
+    document.getElementById("coracao2").innerHTML = num6;
+}
+function contar7(icon){
+    num7++;
+    icon.classList.toggle('selected');
+    document.getElementById("like3").innerHTML = num7;
+}
+function contar8(icon){
+    num8++;
+    icon.classList.toggle('selected');
+    document.getElementById("deslike3").innerHTML = num8;
+}
+function contar9(icon){
+    num9++;
+    icon.classList.toggle('selected');
+    document.getElementById("coracao3").innerHTML = num9;
+}
+function contar10(icon){
+    num10++;
+    icon.classList.toggle('selected');
+    document.getElementById("like4").innerHTML = num10;
+}
+function contar11(icon){
+    num11++;
+    icon.classList.toggle('selected');
+    document.getElementById("deslike4").innerHTML = num11;
+}
+function contar12(icon){
+    num12++;
+    icon.classList.toggle('selected');
+    document.getElementById("coracao4").innerHTML = num12;
+}
+function contar13(icon){
+    num13++;
+    icon.classList.toggle('selected');
+    document.getElementById("like5").innerHTML = num13;
+}
+function contar14(icon){
+    num14++;
+    icon.classList.toggle('selected');
+    document.getElementById("deslike5").innerHTML = num14;
+}
+function contar15(icon){
+    num15++;
+    icon.classList.toggle('selected');
+    document.getElementById("coracao5").innerHTML = num15;
+}
