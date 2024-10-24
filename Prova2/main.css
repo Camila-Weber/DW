@@ -5,7 +5,7 @@
 --eggshell: #f0ebd8ff; */
 
 html, body {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -34,7 +34,7 @@ section{
     text-align: center; 
     color: #0d1321ff;;
     color: #3e5c76ff;
-    color: #748cabff;
+    color: rgb(116, 140, 171);
 }
 
 .navbar-nav a.nav-link.active,
@@ -55,8 +55,8 @@ a.navbar-brand:hover{
 
 .light {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     background-color: rgba(255, 255, 255, 0.03);
     border-radius: 50%;
     pointer-events: none; 
@@ -91,32 +91,42 @@ a.btn{
 a.btn:hover{
     background-color: #0d1321ff;
     border: #f0ebd8ff 2px solid;
-    color: #f0ebd8ff;
+    color: #f0ebd8;
 }
 
 /* SOBRE */
+#sobre{
+    min-height: 200vh;
+}
 
 .soft-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.card {
-    border: 1px solid #3e5c76ff;
-    border-radius: 8px;
+/* cardi, pois não estava permitindo alteração com card, provavelmente por causa do bootstrap, deve ter uma configuração específica para quando tem uma class="card" */
+.cardi {
+    border: 3px solid #f0ebd8ff;
+    border-radius: 10px;
     padding: 20px;
-    background-color: #f0ebd8ff;
-    transition: box-shadow 0.3s;
-    width: 50vw;
+    background-color: #0d1321ff;
+    transition: box-shadow 0.3s, transform 0.3s;
+    width: 40vw;
+    height: 35vh;
+    margin: 1rem;
 }
 
-.card:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.cardi:hover {
+    box-shadow: 0 4px 30px rgba(240, 235, 216, 0.3);
+    transform: scale(1.02);
 }
 
 .skill-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 20px;
 }
 
@@ -124,14 +134,16 @@ a.btn:hover{
     font-size: 30px;
     cursor: pointer;
     transition: color 0.3s;
-    color: #0d1321ff;
+    color: #f0ebd8ff;
 }
 
-.skill-icons i:hover {
-    color: #f0ebd8ff;
-    background-color: #0d1321ff;
+.skill-icons i:hover,
+.skill-icons i.active-icon {
+    color: #0d1321ff;
+    background-color: #f0ebd8ff;
 }
 
 .skill-description {
     text-align: center;
+    color: #f0ebd8ff;
 }

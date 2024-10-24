@@ -42,8 +42,7 @@
             </div>
         </nav>
     </header>
-    <section>
-        <div class="light"></div>
+    <section id="sobre">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column pt-5">
             <h1 class="lead"><b>Minha Trajetória Profissional</b></h1>
             <p class="lead">
@@ -53,13 +52,15 @@
             <p class="lead">
                 Além da minha formação acadêmica, sou fascinada pela constante evolução do mundo digital. Gosto de acompanhar as últimas tendências em desenvolvimento web e design, e busco sempre aprender algo novo, seja por meio de cursos online, eventos ou comunidades. No meu tempo livre, adoro ler livros, assistir filmes e passar um tempo com a família. Acredito que essa curiosidade e paixão por aprender são essenciais para o meu crescimento pessoal e profissional.</p>
             <br>
-            <div class="soft-skills text-center mt-4">
+            <div class="soft-skills mt-4">
                 <h2>Soft Skills</h2>
-                <div class="card">
+                <div class="cardi">
                     <div class="skill-icons">
-                        <i class="ph ph-user-sound" onclick="changeSkill('comunicacao')"></i>
-                        <i class="ph ph-users-three" onclick="changeSkill('trabalhoEquipe')"></i>
-                        <i class="ph ph-lightbulb-filament" onclick="changeSkill('resolucaoProblemas')"></i>
+                        <i class="ph ph-user-sound" onclick="changeSkill('comunicacao', this)"></i>
+                        <i class="ph ph-users-three" onclick="changeSkill('trabalhoEquipe', this)"></i>
+                        <i class="ph ph-lightbulb-filament" onclick="changeSkill('resolucaoProblemas', this)"></i>
+                        <i class="ph ph-pen" onclick="changeSkill('criatividade', this)"></i>
+                        <i class="ph ph-swap" onclick="changeSkill('adaptabilidade', this)"></i>
                     </div>
                     <div id="skill-description" class="skill-description">
                         <h3>Selecione uma habilidade</h3>
@@ -68,6 +69,30 @@
                 </div>
             </div>            
         </div>
+        <div class="soft-skills mt-4">
+            <h2>Hard Skills</h2>
+            <div class="cardi">
+                <div class="skill-icons">
+                    <i class="ph ph-file-html" onclick="changeSkill('html', this)"></i>
+                    <i class="ph ph-file-css" onclick="changeSkill('css', this)"></i>
+                    <i class="ph ph-file-js" onclick="changeSkill('js', this)"></i>
+                    <i class="ph ph-layout" onclick="changeSkill('bootstrap', this)"></i>
+                    <i class="ph ph-file-c" onclick="changeSkill('l_c', this)"></i>
+                    <i class="ph ph-coffee" onclick="changeSkill('java', this)"></i>
+                    <i class="ph ph-github-logo" onclick="changeSkill('git', this)"></i>
+                </div>
+                <div id="skill-description2" class="skill-description">
+                    <h3>Selecione uma habilidade</h3>
+                    <p>Escolha um ícone para ver mais sobre minhas soft skills.</p>
+                </div>
+            </div>
+        </div>            
+    </div>
+        <footer class="text-center mt-4 pb-3">
+            <a href="https://linkedin.com" class="px-3"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="https://github.com" class="px-3"><i class="ph ph-github-logo"></i></a>
+            <a href="https://gmail.com" class="px-3"><i class="ph ph-envelope-simple"></i></a>
+        </footer>
     </section>
     <script src='../main.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
