@@ -34,7 +34,7 @@ section{
     text-align: center; 
     color: #0d1321ff;;
     color: #3e5c76ff;
-    color: rgb(116, 140, 171);
+    color: #748cab;
 }
 
 .navbar-nav a.nav-link.active,
@@ -163,9 +163,31 @@ a.btn:hover{
     overflow: hidden;
 }
 
-#myCarousel:hover{
-    box-shadow: 0 4px 40px rgba(240, 235, 216, 0.3);
+#myCarousel:hover,
+#myCarousel2:hover,
+#myCarousel3:hover,
+#myCarousel4:hover,
+#myCarousel5:hover{
+box-shadow: 0 4px 40px rgba(240, 235, 216, 0.3);
     transform: scale(1.02);
+}
+
+#myCarousel2,
+#myCarousel3,
+#myCarousel4,
+#myCarousel5{
+    width: 40vw;
+    height: 50vh;
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+    border-radius: 10px;
+}
+
+#myCarousel2 img,
+#myCarousel3 img,
+#myCarousel4 img,
+#myCarousel5 img{
+    height: 50vh;
 }
 
 
