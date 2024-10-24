@@ -86,6 +86,7 @@ i:hover{
 a.btn{
     color: #1d2d44ff;
     background-color: #f0ebd8ff;
+    border: #0d1321ff 2px solid;
 }
 
 a.btn:hover{
@@ -147,3 +148,26 @@ a.btn:hover{
     text-align: center;
     color: #f0ebd8ff;
 }
+
+/* PROJETOS */
+.carousel-item img {
+    height: 80vh;
+}
+
+#myCarousel{
+    border: 3px solid #f0ebd8ff; 
+    border-radius: 10px;
+    width: 90vw;
+    height: 80vh;
+    transition: box-shadow 0.3s, transform 0.3s;
+    overflow: hidden;
+}
+
+#myCarousel:hover{
+    box-shadow: 0 4px 40px rgba(240, 235, 216, 0.3);
+    transform: scale(1.02);
+}
+
+
+
+
