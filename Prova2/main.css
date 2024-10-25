@@ -4,12 +4,13 @@
 --silver-lake-blue: #748cabff;
 --eggshell: #f0ebd8ff; */
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     margin: 0;
 }
 
-section{
+section {
     background-color: #0d1321ff;
     padding-top: 3rem;
     margin: 0;
@@ -24,14 +25,14 @@ section{
 }
 
 .navbar-nav {
-    width: 100%; 
+    width: 100%;
     align-items: center;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     margin-left: 60rem;
 }
 
 .navbar {
-    text-align: center; 
+    text-align: center;
     padding-left: 3rem;
 }
 
@@ -44,22 +45,22 @@ section{
 }
 
 .navbar-nav a.nav-link.active,
-a.navbar-brand{
+a.navbar-brand {
     color: #f0ebd8ff;
 }
 
 .navbar-nav a.nav-link.active:hover,
-li.nav-item:hover{
+li.nav-item:hover {
     color: #0d1321ff;
     background-color: #f0ebd8ff;
     border-radius: 5px;
 }
 
-a.navbar-brand:hover{
+a.navbar-brand:hover {
     color: #f0ebd8ff;
 }
 
-.perfil{
+.perfil {
     height: 40vh;
     width: 20vw;
     margin-right: 3rem;
@@ -68,24 +69,24 @@ a.navbar-brand:hover{
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.perfil:hover{
+.perfil:hover {
     box-shadow: 0 4px 30px rgba(240, 235, 216, 0.3);
     transform: scale(1.02);
 }
 
-footer a{
+footer a {
     text-decoration: none;
     padding-bottom: 1rem;
 }
 
-i{
+i {
     font-size: 1.5rem;
     color: #f0ebd8ff;
     padding: 0.5rem;
     border-radius: 50%;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -94,13 +95,13 @@ i{
     padding: 0;
 }
 
-.texto{
+.texto {
     width: 40vw;
     margin: 1rem;
     padding-top: 3rem;
 }
 
-#home{
+#home {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -108,38 +109,38 @@ i{
     padding-top: 10rem;
 }
 
-i:hover{
+i:hover {
     background-color: #f0ebd8ff;
     color: #1d2d44ff;
 }
 
-a.btn{
+a.btn {
     color: #1d2d44ff;
     background-color: #f0ebd8ff;
     border: #0d1321ff 2px solid;
 }
 
-a.btn:hover{
+a.btn:hover {
     background-color: #0d1321ff;
     border: #f0ebd8ff 2px solid;
     color: #f0ebd8ff;
 }
 
 /* SOBRE */
-#sobre, 
-#contato{
+#sobre,
+#contato {
     min-height: 200vh;
     justify-content: space-around;
 }
 
-#sobre .container{
+#sobre .container {
     display: flex;
     flex-direction: column;
     width: 80vw;
     height: 80vh;
 }
 
-#sobre .container p{
+#sobre .container p {
     font-size: 1.2rem;
     border: #f0ebd8ff solid 2px;
     padding: 1rem;
@@ -147,7 +148,7 @@ a.btn:hover{
     border-radius: 10px;
 }
 
-.soft-skills{
+.soft-skills {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -198,12 +199,23 @@ a.btn:hover{
 }
 
 /* PROJETOS */
+#barbie,
+#transformers,
+#pizza,
+#soluco,
+#js {
+    align-items: center;
+    border-top: #f0ebd8ff solid 3px;
+    justify-content: space-between;
+    padding-top: 10rem;
+}
+
 .carousel-item img {
     height: 80vh;
 }
 
-#myCarousel{
-    border: 3px solid #f0ebd8ff; 
+#myCarousel {
+    border: 3px solid #f0ebd8ff;
     border-radius: 10px;
     width: 80vw;
     height: 80vh;
@@ -216,8 +228,8 @@ a.btn:hover{
 #myCarousel3:hover,
 #myCarousel4:hover,
 #myCarousel5:hover,
-#myCarousel6:hover{
-box-shadow: 0 4px 40px rgba(240, 235, 216, 0.3);
+#myCarousel6:hover {
+    box-shadow: 0 4px 40px rgba(240, 235, 216, 0.3);
     transform: scale(1.02);
 }
 
@@ -225,7 +237,7 @@ box-shadow: 0 4px 40px rgba(240, 235, 216, 0.3);
 #myCarousel3,
 #myCarousel4,
 #myCarousel5,
-#myCarousel6{
+#myCarousel6 {
     width: 40vw;
     height: 50vh;
     overflow: hidden;
@@ -237,11 +249,11 @@ box-shadow: 0 4px 40px rgba(240, 235, 216, 0.3);
 #myCarousel3 img,
 #myCarousel4 img,
 #myCarousel5 img,
-#myCarousel6 img{
+#myCarousel6 img {
     height: 50vh;
 }
 
-.icones{
+.icones {
     width: 40vw;
     display: flex;
     flex-direction: row;
@@ -251,19 +263,19 @@ box-shadow: 0 4px 40px rgba(240, 235, 216, 0.3);
     margin-left: -40px;
 }
 
-.icones i{
+.icones i {
     font-size: 2rem;
     margin-left: 40px;
     margin-right: 10px;
 }
 
-.icones p{
+.icones p {
     font-size: 1.5rem;
     padding-top: 10px;
 }
 
 /* CONTATO */
-h1{
+h1 {
     color: #0d1321ff;
 }
 
@@ -281,7 +293,7 @@ form {
     justify-content: space-evenly;
 }
 
-form div{
+form div {
     padding-left: 1.2rem;
 }
 
@@ -300,17 +312,17 @@ textarea {
 }
 
 input[type="checkbox"] {
-    width: 15px; 
-    height: 15px; 
-    accent-color: #0d1321ff; 
+    width: 15px;
+    height: 15px;
+    accent-color: #0d1321ff;
 }
 
-label{
+label {
     font-weight: bolder;
     color: #f0ebd8ff;
 }
 
-fieldset label{
+fieldset label {
     font-weight: normal;
 }
 
@@ -360,7 +372,7 @@ form button:hover {
     color: #f0ebd8ff;
 }
 
-fieldset{
+fieldset {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -378,15 +390,15 @@ output {
     margin-left: 10px;
 }
 
-#contato a{
+#contato a {
     text-decoration: none;
 }
 
-#contato i{
+#contato i {
     font-size: 3rem;
 }
 
-#contato .contato{
+#contato .contato {
     height: 30vh;
     width: 100vw;
     display: flex;
@@ -404,37 +416,49 @@ output {
 }
 
 @media (max-width: 380px) {
-    #sobre .container{
+    #sobre .container {
         min-height: 180vh;
     }
-    #sobre{
+
+    #sobre {
         min-height: 330vh;
     }
-    #skills{
+
+    #skills {
         padding-top: 1rem;
+    }
+
+    #barbie,
+    #transformers,
+    #pizza,
+    #soluco,
+    #js {
+        min-height: 150vh;
+        padding-top: 5rem;
     }
 }
 
-@media (max-width: 576px){
-    *{
+@media (max-width: 576px) {
+    * {
         padding: 0;
         margin: 0;
     }
+
     .navbar-nav {
         margin-left: 0rem;
     }
 
-    .perfil{
+    .perfil {
         height: 50vh;
         width: 60vw;
     }
 
-    #home{
+    #home {
         height: auto;
         padding-top: 5rem;
     }
 
-    .texto{
+    .texto {
         width: 70vw;
     }
 
@@ -446,15 +470,16 @@ output {
         margin: 0;
         padding: 0;
     }
-/* ------------------------------------------ */    
-    #sobre{
+
+    /* ----------------SOBRE-------------- */
+    #sobre {
         justify-content: space-between;
         height: auto;
         min-height: 250vh;
         padding-top: 5rem;
     }
 
-    #sobre .container{
+    #sobre .container {
         min-height: 130vh;
         justify-content: space-around;
         width: 95vw;
@@ -465,65 +490,125 @@ output {
         height: 35.5vh;
     }
 
-    #skills{
+    #skills {
         min-height: 100vh;
         margin-top: 1rem;
         width: 95vw;
         border-top: #f0ebd8ff solid 3px;
     }
-    
+
     .skill-icons {
         gap: 5px;
     }
-    
+
     .skill-icons i {
         font-size: 20px;
     }
-    /* ----------------------------------- */
+
+    /* --------------PROJETOS-------------- */
+    .carousel-caption h1 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption a {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #barbie,
+    #transformers,
+    #pizza,
+    #soluco,
+    #js {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 120vh;
+        padding-top: 5rem;
+    }
+
     .carousel-item img {
         height: 40vh;
     }
 
-    .carousel-caption h1{
-        font-size: 1rem;
+    #myCarousel {
+        border: none;
+        width: 100vw;
+        height: 40vh;
+        border-radius: 0px;
     }
 
-    .carousel-caption a{
-        font-size: 1rem;
+    #myCarousel2,
+    #myCarousel3,
+    #myCarousel4,
+    #myCarousel5,
+    #myCarousel6 {
+        width: 100vw;
+        height: 40vh;
+        border-radius: 0px;
+    }
+
+    .icones {
+        width: 100vw;
+        margin-top: 1rem;
+        margin-left: 0px;
+    }
+
+    .text-content {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    /* --------------CONTATO-------------- */
+    form {
         padding: 0.5rem;
-        
+        width: 95vw;
+        height: auto;
     }
     
-    #myCarousel{
-        border: 3px solid #f0ebd8ff; 
-        border-radius: 10px;
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 80vw;
+    }
+    
+    #commentsList li {
         width: 90vw;
-        height: 40vh;
-        transition: box-shadow 0.3s, transform 0.3s;
-        overflow: hidden;
+    }
+    
+    
+    fieldset {
+        flex-direction: column;
+        align-items: start;
+        gap: 3px;
+    }
+    
+    #contato .contato {
+        flex-direction: column;
     }
 }
 
-@media (min-width: 576px) and (max-width: 992px){
-    *{
+@media (min-width: 576px) and (max-width: 992px) {
+    * {
         padding: 0;
         margin: 0;
     }
+
     .navbar-nav {
         margin-left: 0rem;
     }
 
-    .perfil{
+    .perfil {
         height: 30vh;
         width: 40vw;
     }
 
-    #home{
+    #home {
         height: auto;
         padding-top: 5rem;
     }
 
-    .texto{
+    .texto {
         width: 70vw;
     }
 
@@ -535,15 +620,16 @@ output {
         margin: 0;
         padding: 0;
     }
-    /* ------------------------------------------ */    
-    #sobre{
+
+    /* ------------------------------------------ */
+    #sobre {
         justify-content: space-between;
         height: auto;
         min-height: 150vh;
         padding-top: 1rem;
     }
 
-    #sobre .container{
+    #sobre .container {
         min-height: 90vh;
         justify-content: space-evenly;
         width: 100vw;
@@ -554,31 +640,105 @@ output {
         height: 25vh;
     }
 
-    #skills{
+    #skills {
         min-height: 70vh;
         width: 95vw;
         margin-top: 0;
         border-top: #f0ebd8ff solid 3px;
     }
-    
+
     .skill-icons {
         gap: 10px;
     }
-    
+
     .skill-icons i {
         font-size: 30px;
     }
+
+    /* ------------PROJETOS--------------- */
+    #barbie,
+    #transformers,
+    #pizza,
+    #soluco,
+    #js {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 137vh;
+        padding-top: 5rem;
+    }
+
+    .carousel-item img {
+        height: 60vh;
+    }
+
+    #myCarousel {
+        border: none;
+        width: 100vw;
+        height: 60vh;
+        border-radius: 0px;
+    }
+
+    #myCarousel2,
+    #myCarousel3,
+    #myCarousel4,
+    #myCarousel5,
+    #myCarousel6 {
+        width: 100vw;
+        height: 50vh;
+        border-radius: 0px;
+    }
+
+    .icones {
+        width: 100vw;
+        margin-top: 1rem;
+        margin-left: 0px;
+    }
+
+    .text-content {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    /* --------------CONTATO-------------- */
+    form {
+        padding: 0.5rem;
+        width: 95vw;
+        height: auto;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 80vw;
+    }
+    
+    #commentsList li {
+        width: 90vw;
+    }
+    
+    
+    fieldset {
+        flex-direction: column;
+        align-items: start;
+        gap: 3px;
+    }
+    
+    #contato .contato {
+        flex-direction: row;
+    }
 }
 
-@media  (min-width: 992px) and (max-width: 1770px){
-    #sobre{
+@media (min-width: 992px) and (max-width: 1770px) {
+    #sobre {
         justify-content: space-between;
         height: auto;
         min-height: 150vh;
         padding-top: 1rem;
     }
 
-    #sobre .container{
+    #sobre .container {
         min-height: 90vh;
         justify-content: space-evenly;
         width: 60vw;
@@ -589,17 +749,17 @@ output {
         height: 25vh;
     }
 
-    #skills{
+    #skills {
         min-height: 70vh;
         width: 95vw;
         margin-top: 0;
         border-top: #f0ebd8ff solid 3px;
     }
-    
+
     .skill-icons {
         gap: 15px;
     }
-    
+
     .skill-icons i {
         font-size: 30px;
     }
