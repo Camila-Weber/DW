@@ -74,6 +74,11 @@ a.navbar-brand:hover {
     transform: scale(1.02);
 }
 
+footer{
+    border-top: #f0ebd8ff solid 3px;
+    padding-top: 1rem;
+}
+
 footer a {
     text-decoration: none;
     padding-bottom: 1rem;
