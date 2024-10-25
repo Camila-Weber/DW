@@ -1,14 +1,3 @@
-const light = document.querySelector('.light');
-
-document.addEventListener('mousemove', (e) => {
-    light.style.left = `${e.pageX}px`;
-    light.style.top = `${e.pageY}px`;
-    light.style.display = 'block';
-});
-
-document.addEventListener('mouseleave', () => {
-    light.style.display = 'none';
-});
 
 function changeSkill(skill, element) {
     const description = document.getElementById('skill-description');
@@ -59,7 +48,7 @@ function changeSkill(skill, element) {
 }
 
 
-function changeSkill(skill, element) {
+function changeSkill2(skill, element) {
     const description = document.getElementById('skill-description2');
     switch (skill) {
         case 'html':
@@ -100,7 +89,7 @@ function changeSkill(skill, element) {
             break;
         case 'git':
             description.innerHTML = `
-                <h3>Bootstrap</h3>
+                <h3>Git e GitHub</h3>
                 <p>Estou em processo de aprendizado do Git, focando em como utilizá-lo para controle de versão e colaborar efetivamente em projetos.</p>
             `;
             break;
@@ -140,73 +129,117 @@ function contar(icon){
     icon.classList.toggle('selected');
     document.getElementById("like").innerHTML = num1;
 }
+
 function contar2(icon){
     num2++;
     icon.classList.toggle('selected');
     document.getElementById("deslike").innerHTML = num2;
 }
+
 function contar3(icon){
     num3++;
     icon.classList.toggle('selected');
     document.getElementById("coracao").innerHTML = num3;
 }
+
 function contar4(icon){
     num4++;
     icon.classList.toggle('selected');
     document.getElementById("like2").innerHTML = num4;
 }
+
 function contar5(icon){
     num5++;
     icon.classList.toggle('selected');
     document.getElementById("deslike2").innerHTML = num5;
 }
+
 function contar6(icon){
     num6++;
     icon.classList.toggle('selected');
     document.getElementById("coracao2").innerHTML = num6;
 }
+
 function contar7(icon){
     num7++;
     icon.classList.toggle('selected');
     document.getElementById("like3").innerHTML = num7;
 }
+
 function contar8(icon){
     num8++;
     icon.classList.toggle('selected');
     document.getElementById("deslike3").innerHTML = num8;
 }
+
 function contar9(icon){
     num9++;
     icon.classList.toggle('selected');
     document.getElementById("coracao3").innerHTML = num9;
 }
+
 function contar10(icon){
     num10++;
     icon.classList.toggle('selected');
     document.getElementById("like4").innerHTML = num10;
 }
+
 function contar11(icon){
     num11++;
     icon.classList.toggle('selected');
     document.getElementById("deslike4").innerHTML = num11;
 }
+
 function contar12(icon){
     num12++;
     icon.classList.toggle('selected');
     document.getElementById("coracao4").innerHTML = num12;
 }
+
 function contar13(icon){
     num13++;
     icon.classList.toggle('selected');
     document.getElementById("like5").innerHTML = num13;
 }
+
 function contar14(icon){
     num14++;
     icon.classList.toggle('selected');
     document.getElementById("deslike5").innerHTML = num14;
 }
+
 function contar15(icon){
     num15++;
     icon.classList.toggle('selected');
     document.getElementById("coracao5").innerHTML = num15;
+}
+
+
+document.getElementById("commentForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("nameInput").value;
+    const email = document.getElementById("emailInput").value;
+    const rating = document.getElementById("rating").value;
+    const recommend = document.getElementById("recommendInput").value;
+    const userComment = document.getElementById("commentInput").value;
+    
+    const selectedProjects = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+                                  .map(checkbox => checkbox.value);
+    
+    addComment(name, email, rating, recommend, selectedProjects, userComment);
+
+    document.getElementById("commentForm").reset();
+});
+
+function addComment(name, email, rating, recommend, projects, userComment) {
+    const commentsList = document.getElementById("commentsList");
+    const commentItem = document.createElement("li");
+
+    commentItem.innerHTML = `<strong>${name}</strong> (${email})<br>
+                             Nota: ${rating} | Recomendaria: ${recommend}<br>
+                             Melhores Projetos: ${projects.join(", ") || "Nenhum"}<br>
+                             Comentário: ${userComment}`;
+
+    commentsList.appendChild(commentItem);
 }

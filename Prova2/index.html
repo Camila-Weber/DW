@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html style="overflow: hidden; margin: 0;">
+<html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,9 +12,10 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
-<body style="overflow: hidden; margin: 0;">
+<body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top px-3 mb-3 ps-5" style="background-color: #0d1321ff;border-bottom: #f0ebd8ff 2px solid;">
+        <nav class="navbar navbar-expand-lg fixed-top px-3 mb-3"
+            style="background-color: #0d1321ff;border-bottom: #f0ebd8ff 2px solid;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Camila Weber</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -30,29 +32,33 @@
                             <a class="nav-link active" aria-current="page" href="pages/sobre.html">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="pages/projetos.html">Projetos</a>
+                            <a class="nav-link active" aria-current="page" href="pages/projetos.html">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="pages/contato.html">Contato</a>
+                            <a class="nav-link active" aria-current="page" href="pages/contato.html">Contato</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section>
-        <div class="light"></div>
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column pt-5">
-            <h1 class="lead">Olá! eu sou <b>Camila Weber</b>,</h1>
-            <p class="lead">uma desenvolvedora web dedicada a criar sites e aplicações que se destacam pela
-                funcionalidade e design. Meu objetivo é ajudar marcas a contar suas histórias através da tecnologia.</p>
-            <br>
-            <p class="lead">Transformando ideias em experiências digitais.</p><br>
-            <p class="lead">
-                <a href="pages/projetos.html" class="btn btn-lg btn-light fw-bold">Projetos</a>
-            </p>
+    <section id="home">
+        <div class="container">
+            <div>
+                <img class="perfil img-fluid" src="assets/perfil2-removebg-preview.png" alt="perfil">
+            </div>
+            <div class="texto">
+                <h1 class="lead">Olá! eu sou <b>Camila Weber</b>,</h1>
+                <p class="lead">uma desenvolvedora web dedicada a criar sites e aplicações que se destacam pela
+                    funcionalidade e design. Meu objetivo é ajudar marcas a contar suas histórias através da tecnologia.
+                </p>
+                <br>
+                <p class="lead">Transformando ideias em experiências digitais.</p>
+                <br>
+                <p class="lead">
+                    <a href="pages/projetos.html" class="btn btn-lg btn-light fw-bold">Projetos</a>
+                </p>
+            </div>
         </div>
         <footer class="text-center mt-4 pb-3">
             <a href="https://linkedin.com" class="px-3"><i class="ph ph-linkedin-logo"></i></a>

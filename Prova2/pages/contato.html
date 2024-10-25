@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -10,9 +11,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top px-3 mb-3 ps-5" style="background-color: #0d1321ff;border-bottom: #f0ebd8ff 2px solid;">
+        <nav class="navbar navbar-expand-lg fixed-top px-3 mb-3 ps-5"
+            style="background-color: #0d1321ff;border-bottom: #f0ebd8ff 2px solid;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">Camila Weber</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,25 +32,62 @@
                             <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="projetos.html">Projetos</a>
+                            <a class="nav-link active" aria-current="page" href="projetos.html">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="contato.html">Contato</a>
+                            <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section>
-        <div class="light"></div>
+    <section id="contato">
+        <div class="contato">
+           <a href="https://linkedin.com" class="px-3"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="https://github.com" class="px-3"><i class="ph ph-github-logo"></i></a>
+            <a href="https://gmail.com" class="px-3"><i class="ph ph-envelope-simple"></i></a> 
+        </div>
+        <h1>Comentar</h1>
+        <form id="commentForm">
+            <div>
+                <label for="nameInput">Nome</label><br>
+                <input type="text" id="nameInput" placeholder="Seu Nome" required><br>
+                <label for="emailInput">E-mail</label><br>
+                <input type="email" id="emailInput" placeholder="Seu E-mail" required><br><br>
+                <label for="rating">Nota (1 a 10):</label>
+                <input type="range" id="rating" name="rating" min="1" max="10" value="5"
+                    oninput="this.nextElementSibling.value = this.value">
+                <output>5</output><br><br>
+                <label>Você recomendaria?</label>
+                <select id="recommendInput" required>
+                    <option value="">Selecione</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select><br><br>
+                <label>Quais os melhores projetos?</label>
+                <fieldset>
+                    <label><input type="checkbox" value="Projeto 1"> Projeto Barbie</label><br>
+                    <label><input type="checkbox" value="Projeto 2"> Projeto Transformers</label><br>
+                    <label><input type="checkbox" value="Projeto 3"> Projeto Pizza SI</label><br>
+                    <label><input type="checkbox" value="Projeto 4"> Projeto Soluço</label><br>
+                    <label><input type="checkbox" value="Projeto 5"> Projeto JavaScript</label><br>
+                </fieldset><br>
+                <label for="commentInput">Seu Comentário:</label>
+                <textarea id="commentInput" rows="4" placeholder="Escreva seu comentário aqui..." required></textarea>
+            </div>
+            <button type="submit" style="border-radius: 10px; font-size: 1.3rem;">Comentar</button>
+        </form>
 
+        <div id="commentsSection">
+            <h2>Comentários</h2>
+            <ul id="commentsList"></ul>
+        </div>
     </section>
     <script src='../main.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
