@@ -132,6 +132,21 @@ a.btn:hover{
     justify-content: space-around;
 }
 
+#sobre .container{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 80vh;
+}
+
+#sobre .container p{
+    font-size: 1.2rem;
+    border: #f0ebd8ff solid 2px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+}
+
 .soft-skills{
     display: flex;
     flex-direction: column;
@@ -388,6 +403,18 @@ output {
     }
 }
 
+@media (max-width: 380px) {
+    #sobre .container{
+        min-height: 180vh;
+    }
+    #sobre{
+        min-height: 330vh;
+    }
+    #skills{
+        padding-top: 1rem;
+    }
+}
+
 @media (max-width: 576px){
     *{
         padding: 0;
@@ -418,6 +445,62 @@ output {
         align-items: center;
         margin: 0;
         padding: 0;
+    }
+/* ------------------------------------------ */    
+    #sobre{
+        justify-content: space-between;
+        height: auto;
+        min-height: 250vh;
+        padding-top: 5rem;
+    }
+
+    #sobre .container{
+        min-height: 130vh;
+        justify-content: space-around;
+        width: 95vw;
+    }
+
+    .cardi {
+        width: 90vw;
+        height: 35.5vh;
+    }
+
+    #skills{
+        min-height: 100vh;
+        margin-top: 1rem;
+        width: 95vw;
+        border-top: #f0ebd8ff solid 3px;
+    }
+    
+    .skill-icons {
+        gap: 5px;
+    }
+    
+    .skill-icons i {
+        font-size: 20px;
+    }
+    /* ----------------------------------- */
+    .carousel-item img {
+        height: 40vh;
+    }
+
+    .carousel-caption h1{
+        font-size: 1rem;
+    }
+
+    .carousel-caption a{
+        font-size: 1rem;
+        padding: 0.5rem;
+        
+    }
+    
+    #myCarousel{
+        border: 3px solid #f0ebd8ff; 
+        border-radius: 10px;
+        width: 90vw;
+        height: 40vh;
+        transition: box-shadow 0.3s, transform 0.3s;
+        overflow: hidden;
     }
 }
 
@@ -451,5 +534,73 @@ output {
         align-items: center;
         margin: 0;
         padding: 0;
+    }
+    /* ------------------------------------------ */    
+    #sobre{
+        justify-content: space-between;
+        height: auto;
+        min-height: 150vh;
+        padding-top: 1rem;
+    }
+
+    #sobre .container{
+        min-height: 90vh;
+        justify-content: space-evenly;
+        width: 100vw;
+    }
+
+    .cardi {
+        width: 75vw;
+        height: 25vh;
+    }
+
+    #skills{
+        min-height: 70vh;
+        width: 95vw;
+        margin-top: 0;
+        border-top: #f0ebd8ff solid 3px;
+    }
+    
+    .skill-icons {
+        gap: 10px;
+    }
+    
+    .skill-icons i {
+        font-size: 30px;
+    }
+}
+
+@media  (min-width: 992px) and (max-width: 1770px){
+    #sobre{
+        justify-content: space-between;
+        height: auto;
+        min-height: 150vh;
+        padding-top: 1rem;
+    }
+
+    #sobre .container{
+        min-height: 90vh;
+        justify-content: space-evenly;
+        width: 60vw;
+    }
+
+    .cardi {
+        width: 45vw;
+        height: 25vh;
+    }
+
+    #skills{
+        min-height: 70vh;
+        width: 95vw;
+        margin-top: 0;
+        border-top: #f0ebd8ff solid 3px;
+    }
+    
+    .skill-icons {
+        gap: 15px;
+    }
+    
+    .skill-icons i {
+        font-size: 30px;
     }
 }
