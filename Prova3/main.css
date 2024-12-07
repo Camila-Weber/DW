@@ -1,0 +1,618 @@
+/* -------------------------- ESTILO DA PÁGINA INICIAL -------------------------------- */
+/* Corpo da Página */
+body.inicio {
+    background-color: #253439;
+}
+
+/* Título principal */
+h1.display-3 {
+    color: #b29e84;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+/* Frase */
+p.lead {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #637072;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+a.btn {
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.inicio a.login,
+.inicio a.cadastro {
+    border: #b29e84 solid 3px;
+    background-color: #b29e84;
+    color: #253439;
+}
+
+a.login:hover,
+a.cadastro:hover {
+    background-color: #253439;
+    border-color: #b29e84;
+    color: #b29e84;
+    font-weight: bolder;
+}
+
+/* ---------------------------- ESTILO DA PÁGINA DE LOGIN ------------------------------ */
+/* Corpo da Página */
+body.pagLogin {
+    background-color: #b29e84;
+}
+
+/* Estilo do card de login */
+div.card {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #253439;
+    width: 100%;
+    max-width: 400px;
+    /* Largura máxima para o card */
+}
+
+/* Título do Card */
+h2.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #b29e84;
+    margin-bottom: 20px;
+}
+
+/* Estilo do label */
+.pagLogin label {
+    color: #b29e84;
+    font-size: 1.1rem;
+    padding-left: 8px;
+}
+
+/* Estilos para o formulário */
+input.form-control {
+    border-radius: 8px;
+    border: 3px solid #b29e84;
+    color: #253439;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+input.form-control:focus {
+    border-color: #b29e84;
+    box-shadow: none;
+}
+
+/* Estilos para o botão de submit */
+button.entrar {
+    background-color: #b29e84;
+    border: #b29e84 solid 3px;
+    padding: 8px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    color: #253439;
+    font-weight: bolder;
+}
+
+button.entrar:hover {
+    background-color: #253439;
+    border-color: #b29e84;
+    color: #b29e84;
+}
+
+/* Estilo da mensagem de erro */
+.alert-danger {
+    color: #fff;
+    background-color: #e3342f;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+/* Link para a página inicial */
+a.btn-link {
+    color: #b29e84;
+    text-decoration: none;
+}
+
+a.btn-link:hover {
+    text-decoration: underline;
+    color: #b29e84;
+}
+
+/* Estilo para o texto de "Cadastro" */
+.text-center span {
+    font-size: 1rem;
+}
+
+div.textinho {
+    color: #637072;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+div.textinho a {
+    font-weight: bolder;
+}
+
+.text-center a {
+    color: #b29e84;
+    text-decoration: none;
+}
+
+.logar .text-center a:hover {
+    text-decoration: underline;
+}
+
+/* Adicionando margens para os links */
+.text-center {
+    margin-top: 15px;
+}
+
+/* Estilo de fundo e animação do card */
+div.card-body {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animação de FadeIn para a transição do card */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------------------------- ESTILO DA PÁGINA DE CADASTRO ------------------------------ */
+/* Corpo da Página */
+body.pagCadastrar {
+    background-color: #253439;
+    padding: 20px;
+}
+
+.pagCadastrar div.container {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* Estilo do card de login */
+.pagCadastrar div.card {
+    background-color: #b29e84;
+}
+
+/* Título do Card */
+.pagCadastrar h2.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #253439;
+    margin-bottom: 5px;
+}
+
+/* Estilo do label */
+label {
+    color: #253439;
+}
+
+/* Estilos para o formulário */
+input.form-control {
+    color: #253439;
+    margin-bottom: 0px;
+    padding: 8px;
+}
+
+input.form-control:focus {
+    border-color: #253439;
+    box-shadow: none;
+}
+
+/* Estilos para o botão de submit */
+button.cadastrar {
+    background-color: #253439;
+    border: #253439 solid 3px;
+    color: #b29e84;
+    width: 100%;
+    font-weight: bolder;
+}
+
+button.cadastrar:hover {
+    background-color: #b29e84;
+    border-color: #253439;
+    color: #253439;
+}
+
+div.texto a {
+    color: #637072;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding-bottom: 0;
+}
+
+.texto a:hover {
+    color: #253439;
+    text-decoration: none;
+}
+
+/* ---------------------------- ESTILO DA PÁGINA DO USUÁRIO ------------------------------ */
+/* TEMAS DA PÁGINA DO USUÁRIO */
+/* Tema 1 */
+body.tema1 {
+    background-color: #253439;
+    color: #b29e84;
+}
+
+.tema1 nav.navbar,
+.tema3 nav.navbar {
+    background-color: #253439;
+    border-bottom: #b29e84 solid 3px;
+    box-shadow: 0px 4px 10px 2px rgba(178, 158, 132, 0.5);
+    margin-bottom: 40px;
+}
+
+.tema1 .navbar-brand,
+.tema2 .navbar-brand,
+.tema3 .navbar-brand,
+.tema4 .navbar-brand {
+    color: #b29e84 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a.alterar {
+    background-color: #b29e84;
+    border: #b29e84 solid 3px;
+    color: #253439;
+    font-weight: bolder;
+}
+
+a.sair {
+    background-color: #253439;
+    border: #b29e84 solid 3px;
+    color: #b29e84;
+    font-weight: bolder;
+}
+
+a.sair:hover {
+    background-color: #637072;
+    color: #253439;
+}
+
+.excluir {
+    background-color: #637072 !important;
+    border: rgb(99, 112, 114) solid 3px !important;
+    color: #253439;
+    font-weight: bolder;
+}
+
+/* Estilos para o container principal */
+.container.profile-card {
+    margin-top: 30px;
+}
+
+/* Card de perfil */
+.tema1 .card {
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px 2px rgba(99, 112, 114, 0.5);
+}
+
+.tema1 .card-body,
+.tema2 .card-body,
+.tema3 .card-body,
+.tema4 .card-body {
+    padding: 20px;
+}
+
+/* Foto de perfil */
+.tema1 .profile-card img,
+.tema2 .profile-card img,
+.tema3 .profile-card img,
+.tema4 .profile-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #b29e84;
+    box-shadow: 0px 4px 10px 2px rgba(178, 158, 132, 0.5);
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nome do usuário */
+.tema1 .profile-card h3,
+.tema2 .profile-card h3,
+.tema3 .profile-card h3,
+.tema4 .profile-card h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #b29e84;
+}
+
+/* Estilo para a frase personalizada */
+.profile-card .card h4 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #b29e84;
+}
+
+/* Contagem de dias para o aniversário */
+.profile-card .card h4 {
+    font-size: 1.4rem;
+}
+
+/* Mensagem de aniversário */
+.alert-success {
+    background-color: #253439;
+    border: #b29e84 solid 3px;
+    color: #637072;
+    font-size: 1.3rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.alert-success:hover {
+    box-shadow: 0px 0px 8px 8px rgba(178, 158, 132, 0.5);
+}
+
+/* ------------------------------------------------------- */
+/* Tema 2 */
+body.tema2 {
+    background-color: #b29e84;
+    color: #253439;
+}
+
+.tema2 nav.navbar {
+    background-color: #253439;
+    border-bottom: #b29e84 solid 3px;
+    box-shadow: 0px 4px 10px 2px rgba(37, 52, 57, 0.5);
+}
+
+a.alterar:hover {
+    background-color: #253439;
+    color: #b29e84;
+}
+
+.excluir:hover {
+    color: #b29e84;
+}
+
+/* Card de perfil */
+.tema2 .card {
+    box-shadow: 0px 4px 10px 10px rgba(99, 112, 114, 0.5);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* Nome do usuário */
+.tema2 .profile-card h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #b29e84;
+}
+
+
+/* ------------------------------------------------------- */
+/* Tema 3 */
+body.tema3 {
+    background-color: #637072;
+    color: #253439;
+}
+
+.tema3 nav.navbar {
+    background-color: #253439;
+    border-bottom: #b29e84 solid 3px;
+    box-shadow: 0px 4px 10px 2px rgba(178, 158, 132, 0.5);
+}
+
+/* Card de perfil */
+.tema3 .card {
+    box-shadow: 0px 4px 10px 10px rgba(178, 158, 132, 0.5);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: #253439 solid 4px;
+    background-color: #637072;
+}
+
+.tema3 .profile-card img {
+    border: 4px solid #253439;
+    box-shadow: none;
+
+}
+
+/* Nome do usuário */
+.tema3 .profile-card h3 {
+    color: #253439;
+}
+
+/* Estilo para a frase personalizada */
+.tema3 .profile-card .card h4 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #253439;
+}
+
+/* Mensagem de aniversário */
+.tema3 .alert-success {
+    background-color: #637072;
+    border: #253439 solid 3px;
+    color: #b29e84;
+    font-size: 1.3rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+/* ------------------------------------------------------ */
+/* Tema 4 */
+body.tema4 {
+    background-color: #253439;
+    color: #637072;
+}
+
+.tema4 nav.navbar {
+    background-color: #253439;
+    border-bottom: rgb(99, 112, 114) solid 3px;
+    box-shadow: 0px 4px 10px 2px rgba(99, 112, 114, 0.5);
+}
+
+/* Card de perfil */
+.tema4 .card {
+    box-shadow: 0px 4px 10px 8px rgba(99, 112, 114, 0.5);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: #253439 solid 4px;
+}
+
+.tema4 .profile-card img {
+    border: 4px solid #637072;
+    box-shadow: none;
+}
+
+/* Nome do usuário */
+.tema4 .profile-card h3 {
+    color: #637072;
+}
+
+/* Estilo para a frase personalizada */
+.tema4 .profile-card .card h4 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #637072;
+}
+
+/* Mensagem de aniversário */
+.tema4 .alert-success {
+    background-color: #253439;
+    border: #637072 solid 3px;
+    color: #637072;
+    font-size: 1.3rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.tema4 .alert-success:hover {
+    box-shadow: 0px 4px 10px 10px rgba(99, 112, 114, 0.5);
+}
+
+/* ---------------------------- ESTILO DA PÁGINA DE EDIÇÃO ------------------------------ */
+
+.pagEditar .container {
+    max-width: 100%;
+    padding-top: 40px;
+    background-color: #637072;
+}
+
+.pagEditar h2 {
+    color: #253439;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.pagEditar .form-label {
+    font-weight: bold;
+    color: #253439;
+}
+
+.pagEditar .form-control {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #253439;
+}
+
+.pagEditar .form-control:focus {
+    border-color: #253439;
+    box-shadow: none;
+}
+
+.pagEditar .mb-3 {
+    margin-bottom: 1rem;
+}
+
+small {
+    font-size: 0.875rem;
+    color: #253439;
+    padding-left: 20px;
+}
+
+img {
+    border-radius: 5px;
+    border-radius: 50%;
+    border: #253439 solid 2px;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    background-color: #b29e84;
+    border: #b29e84 solid 3px;
+    color: #253439;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 0.3s;
+    font-weight: bolder;
+}
+
+button[type="submit"]:hover {
+    background-color: #637072;
+    border: #253439 solid 3px;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-color: #637072;
+    color: #253439;
+    border: #253439 solid 3px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cancelar:hover {
+    background-color: #253439;
+    color: #637072;
+}
+
+.tema {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 10px;
+}
+
+.tema label {
+    color: #253439;
+}
+
+.pagEditar form {
+    background-color: #637072;
+    border: #253439 solid 3px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 8px rgba(144, 141, 137, 0.5);
+}
+
+/* Estilo para os alertas */
+.alert {
+    margin-top: 20px;
+}
