@@ -4,20 +4,32 @@
 ## Usuários cadastrados
 
 >**Nome**: Usuário Teste
+>
 >**Email**: user@teste.com
+>
 >**Senha**: User1234*
 
+
 >**Nome**: Rosalinda Perreira
+>
 >**Email**: rosa.linda@perreira.com
+>
 >**Senha**: Rosa1234*
 
+
 >**Nome**: José Alves Rocha
+>
 >**Email**: ze.alves@rocha.com
+>
 >**Senha**: Rocha1234*
 
+
 >**Nome**: Pamela Almeida
+>
 >**Email**: pamela@almeida.com
+>
 >**Senha**: Pam1234*
+
 
 
 ## Banco de Dados
